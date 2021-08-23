@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+
+.model {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, #184358 0%, #b4e28f  100%);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* flex-wrap: wrap; */
+  background-color: white;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  margin: 10px;
+  padding: 20px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.model h1 {
+  display: flex; 
+  align-self: start;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 5vmin;
+  text-align: left;
+  color:#184358;
+}
+
+.model p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 3vmin;
+  color: #777777;
+}
+
+p a {
+  color: rgba(255, 255, 255, 0.582);
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #557799;
+  transition-duration: 300ms;
+  text-decoration: none;
+}
+
+.profile {
+  width: 60vmin;
+  height: 80vmin;
+  padding: 1em 1em;
+  border-radius: 2em;
+  position: relative;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+
+.icon {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+.contact-btn {
+  color: #184358;
+  text-decoration: none;
+  margin: 2px;
+  padding: 9px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.contact-btn:hover {
+  color: #b4e28f;
+  transition-duration: 300ms;
+  text-decoration: none;
+}
+
+.button-row {
+  margin-top: 2em;
+}
+
+.cvBtn {
+  margin-top: 2em; 
+  display: inline-block;
+}
+.cvBtn a {
+      background-color: #184358;
+      line-height: 6vmin;
+      width: 5vmin;
+      border-radius: 8px;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      font-size: 3vmin; 
+      font-weight: bold;
+      text-decoration: none;
+}
+
+
+
+.cvBtn a:hover {
+      background-image: -moz-linear-gradient(0deg, #184358 0%, #b4e28f 100%);
+      background-image: -webkit-linear-gradient(0deg, #184358 0%, #b4e28f 100%);
+      background-image: -ms-linear-gradient(0deg, #184358 0%, #b4e28f 100%); 
+      transition-duration: 300ms;
+      text-decoration: none;
+
+}
+
+.color-btn {
+  right: 0px;
+  top: 0px;
+  margin: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .model h1 {
+    align-self: center;
+  }
+  .model p{
+    align-self: center;
+  }
+}
